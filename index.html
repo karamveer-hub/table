@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 1500px;
+
+        }
+        .main
+        {
+            width: 50%;
+            margin-top: 5%;
+            left: 20%;
+            position: absolute;
+            height: auto;
+            border: 1px solid #FFA21F;
+            /* border-bottom: 10px solid #FFA21F; */
+            box-shadow: 0 30px 30px -20px #ffa21fa2;
+            transform:rotateX(-30deg);
+            transform-style: preserve-3d;
+            overflow: hidden;
+            /* background:linear-gradient(to top,rgba(0, 0, 0, 0.132),rgba(255, 255, 255, 0.27)) */
+        }
+         .main:nth-child(2){
+            transform: rotateX(-130deg) translateZ(780px) translateY(-16px) translateX(-150px);
+    mask-image: linear-gradient(transparent 50%, white 90%);
+    -webkit-mask-image: linear-gradient(transparent 80%, white 100%);
+    width: 67%;
+        } 
+        .inner{
+            /* background-color: white; */
+            /* border: 1px solid red; */
+            padding: 0 20px;
+            width: 50%;
+            
+        }
+        .main-roof{
+            /* background:linear-gradient(to top,rgba(255, 0, 0, 0.111) ,rgb(184, 0, 0) ); */
+            background: #FFA21F;
+            height: 50px;
+            transform: rotateX(40deg)  ;
+            transform-style: preserve-3d;
+            /* border: 1px solid gray; */
+            width: 54.5%;
+            left: 17.5%;
+            margin-top: 5.2%;
+            position: absolute;
+            /* border: 1px solid #FFA21F; */
+
+        }
+        /* .inner:nth-child(9) p,
+        .inner:nth-child(10) p,
+        .inner:nth-child(11) p{
+            /* text-shadow: 0 0 4px gray; 
+            color: rgb(255, 0, 0);
+            font-size: 16px;
+        }
+        .inner:nth-child(6) p,
+        .inner:nth-child(7) p,
+        .inner:nth-child(8) p{
+            /* text-shadow: 0 0 4px gray; 
+            color: rgb(255, 85, 0);
+            /* font-size: 18px; 
+        }
+        .inner:nth-child(2) p,
+        .inner:nth-child(3) p,
+        .inner:nth-child(4) p,
+        .inner:nth-child(5) p{
+            /* text-shadow: 0 0 4px gray; 
+            color: rgb(45, 129, 0);
+            font-size: 16px; 
+        }*/
+        img{
+            position: absolute;
+    width: 30%;
+    bottom: -100%;
+    left: 50%;
+    /* transform: rotate(45deg); */
+    height: 20%;
+    transform-style: preserve-3d;
+    animation: animateimg 3s linear forwards;
+    /* animation-delay:2s; */
+    transform-origin: center;
+
+        }
+        @keyframes animateimg {
+            0%{bottom: -100%; }
+            10%{bottom: 0;height: 20%;transform: rotateY(360deg)}
+            50%{height: 60%;}
+            80%{bottom: 0; height: 60%;}
+            100%{bottom: 200%;display: none;height: 60%;}
+        }
+        .inner:nth-child(2) p{
+            color: red;
+            animation-delay: 1s;
+        }
+      
+        .inner:nth-child(3) p{
+            color: rgb(240, 0, 0);
+            animation-delay: 0.9s;
+
+        }
+        .inner:nth-child(4) p{
+            color: rgb(220, 0, 0);
+            animation-delay: 0.8s;
+
+        }
+        .inner:nth-child(5) p{
+            color: rgb(200, 0, 0);
+            animation-delay: 0.7s;
+
+        }
+        .inner:nth-child(6) p{
+            color: rgb(180, 0, 0);
+            animation-delay: 0.6s;
+
+        }
+        .inner:nth-child(7) p{
+            color: rgb(160, 0, 0);
+            animation-delay: 0.5s;
+
+        }
+        .inner:nth-child(8) p{
+            color: rgb(140, 0, 0);
+            animation-delay: 0.4s;
+
+        }
+        .inner:nth-child(9) p{
+            color: rgb(120, 0, 0);
+            animation-delay: 0.3s;
+        }
+        .inner:nth-child(10) p{
+            color: rgb(100, 0, 0);
+            animation-delay: 0.2s;
+
+        }
+        .inner:nth-child(11) p{
+            color: rgb(80, 0, 0);
+            animation-delay: 0.1s;
+        }
+        .inner p{
+            letter-spacing: 0.5px;
+            font-size: 20px;
+                line-height: 2rem;
+            animation: animate 1s ease-in-out;
+            transition: all 1s;
+
+        }
+        @keyframes animate {
+            to{color: rgb(255, 99, 99);text-shadow: 20px 20px 1px 1px rgb(255, 75, 75); font-weight: 500;}
+        }
+    </style>
+</head>
+<body>
+    <div class="main-roof"></div>
+   <div class="main">
+    <div class="top">
+        
+    </div>
+    <div class="inner">
+        <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <!-- <div class="arrow"> -->
+        <img src="pc5dKngoi.png">
+    <!-- </div> -->
+   </div>
+   <div class="main">
+    <div class="top">
+        
+    </div>
+    <div class="inner">
+        <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <div class="inner">
+ <p>Sample text</p>
+    </div>
+    <!-- <div class="arrow"> -->
+        <img src="pc5dKngoi.png">
+    <!-- </div> -->
+   </div>
+</body>
+</html>
